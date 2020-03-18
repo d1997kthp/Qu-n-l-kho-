@@ -81,7 +81,7 @@ export class CustomerListComponent implements OnInit {
         nzMaskClosable: false,
         nzClosable: false,
         nzComponentParams: {
-          customer: { id: 0, name: "",diachi: "",sdt: 0},
+          customer: { id: 0, name: "",diachi: "",sdt: null},
           isAddNew: true
         }
       });
@@ -96,7 +96,7 @@ export class CustomerListComponent implements OnInit {
     {
       const modal = this.modalService.create(
         {
-        nzTitle: 'Sửa thông tin vật tư',
+        nzTitle: 'Sửa thông tin khách hàng',
         nzContent: CustomerModalComponent,
         nzStyle: 
         {

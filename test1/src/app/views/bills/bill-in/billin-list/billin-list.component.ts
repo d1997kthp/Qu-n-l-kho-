@@ -82,7 +82,7 @@ export class BillinListComponent implements OnInit {
       nzMaskClosable: false,
       nzClosable: false,
       nzComponentParams: {
-        billin: { id: 0,tenvtnhap: "", ngaynhap: null, soluongnhap: 0,dongianhap:0,tinhtrang:"", },
+        billin: { id: 0,tenvtnhap: "", ngaynhap: null, soluongnhap: null,dongianhap:null,tinhtrang:"", },
         isAddNew: true
       }
     });
@@ -123,7 +123,7 @@ export class BillinListComponent implements OnInit {
     console.log(billin);
   }
   search(keyword: string) {
-    this.pagingParams.searchKey = "name";
+    this.pagingParams.searchKey = "tenvtnhap";
     this.pagingParams.searchValue = keyword;
     this.loadData(true);
   }

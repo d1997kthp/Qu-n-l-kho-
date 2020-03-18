@@ -5,4 +5,5 @@ export interface Stock {
     inventoryId:number;
     unitName:string;
     inventoryName:string;
+    soluong:number ;
 }

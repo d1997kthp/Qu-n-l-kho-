@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Quan_Ly_Kho\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj": {}
+    "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Backend\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj": {}
   },
   "projects": {
-    "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Quan_Ly_Kho\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj": {
+    "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Backend\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Quan_Ly_Kho\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj",
+        "projectUniqueName": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Backend\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj",
         "projectName": "Quan_Ly_Kho",
-        "projectPath": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Quan_Ly_Kho\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj",
+        "projectPath": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Backend\\Quan_Ly_Kho\\Quan_Ly_Kho.csproj",
         "packagesPath": "C:\\Users\\d1997\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Quan_Ly_Kho\\Quan_Ly_Kho\\obj\\",
+        "outputPath": "C:\\Users\\d1997\\Documents\\Zalo Received Files\\Backend\\Quan_Ly_Kho\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\d1997\\AppData\\Roaming\\NuGet\\NuGet.Config",

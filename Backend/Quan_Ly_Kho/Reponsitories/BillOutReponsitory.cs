@@ -20,29 +20,33 @@ namespace Quan_Ly_Kho.Reponsitories
         public async Task<PagedList<BillOut>> GetAllPagingAsync(PagingParams pagingParams)
         {
             IQueryable<BillOut> _query = from u in _context.BillOuts
-                                         orderby u.Tenvtxuat
+                                         orderby u.Id
                                          select new BillOut { Id = u.Id, Tenvtxuat = u.Tenvtxuat, Ngayxuat = u.Ngayxuat, Soluongxuat = u.Soluongxuat, Dongiaxuat = u.Dongiaxuat, Tinhtrang = u.Tinhtrang };
             // Search
-            if (pagingParams.SearchValue == "name")
+            if (pagingParams.SearchKey == "tenvtxuat")
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
+                if (string.IsNullOrEmpty(pagingParams.SearchValue) == false)
                 {
-                    _query = _query.Where(o => o.Tenvtxuat.Contains(pagingParams.SearchKey));
+                    _query = _query.Where(o => o.Tenvtxuat.Contains(pagingParams.SearchValue));
                 }
             }
-
-            if (pagingParams.SearchValue == "id")
+            // tim kiem all
+            if (string.IsNullOrEmpty(pagingParams.Keyword) == false)
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
-                {
-                    int _id = Convert.ToInt32(pagingParams.SearchKey);
+                _query = _query.Where(o => o.Tenvtxuat.Contains(pagingParams.SearchKey));
+            }
 
+            if (pagingParams.SearchKey == "id")
+            {
+                if (string.IsNullOrEmpty(pagingParams.SortValue) == false)
+                {
+                    int _id = Convert.ToInt32(pagingParams.SortValue);
                     _query = _query.Where(o => o.Id == _id);
                 }
             }
 
             //Sort 
-            if (pagingParams.SortKey == "name")
+            if (pagingParams.SortKey == "tenvtxuat")
             {
                 if (pagingParams.SortValue == "ascend")
 

@@ -4,6 +4,10 @@
     <nz-form-control [nzSm]="17" [nzXs]="24" nzErrorTip="Vui lòng nhập vật tư!">
       <input type="text" nz-input formControlName="name" id="name" autofocus />
     </nz-form-control> 
+      <nz-form-label [nzSm]="7" [nzXs]="24"nzRequired nzFor="soluong">Số lượng</nz-form-label>
+      <nz-form-control [nzSm]="17" [nzXs]="24" nzErrorTip="Vui lòng nhập vật tư!">
+        <input type="text" nz-input formControlName="soluong" id="soluong" autofocus />
+      </nz-form-control>
     <nz-form-label [nzSm]="7" [nzXs]="24" nzRequired nzFor="unitId">Tên đơn vị</nz-form-label>
     <nz-form-control [nzSm]="17" [nzXs]="24" nzErrorTip="Vui lòng chọn đơn vị!">
       <nz-select nzPlaceHolder="Chọn tên đơn vị" nzAllowClear nzShowSearch formControlName="unitId" id="unitId">

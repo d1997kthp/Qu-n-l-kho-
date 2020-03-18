@@ -27,16 +27,16 @@
       <thead (nzSortChange)="sort($event)" nzSingleSort>
         <tr>
           <th nzShowSort nzSortKey="id" nzCustomFilter>ID</th>
-          <th nzShowSort nzSortKey="name" nzCustomFilter> Tên vật tư nhập
+          <th nzShowSort nzSortKey="tenvtnhap" nzCustomFilter> Tên vật tư nhập
             <i nz-th-extra class="ant-table-filter-icon" nz-icon nz-dropdown #dropdown1="nzDropdown" nzType="search"
             [nzDropdownMenu]="menu1" [class.ant-table-filter-open]="dropdown1.nzVisible" nzTrigger="click"
             nzPlacement="bottomRight" [nzClickHide]="false" nzTableFilter></i>
           <nz-dropdown-menu #menu1="nzDropdownMenu">
             <div class="search-box">
               <input type="text" nz-input placeholder="Tìm tên " [(ngModel)]="pagingParams.searchValue"
-                (keyup.enter)="searchColumn('name')" />
+                (keyup.enter)="searchColumn('tenvtnhap')" />
               <button [disabled]="!pagingParams.searchValue" nz-button nzSize="small" nzType="primary"
-                (click)="searchColumn('name')" class="search-button">
+                (click)="searchColumn('tenvtnhap')" class="search-button">
                 Tìm
               </button>
             </div>

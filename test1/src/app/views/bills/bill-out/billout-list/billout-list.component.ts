@@ -81,7 +81,7 @@ export class BilloutListComponent implements OnInit {
       nzMaskClosable: false,
       nzClosable: false,
       nzComponentParams: {
-        billout: { id: 0,tenvtxuat: "", ngayxuat: null, soluongxuat: 0,dongiaxuat:0,tinhtrang:"", },
+        billout: { id: 0,tenvtxuat: "", ngayxuat: null, soluongxuat: null,dongiaxuat:null,tinhtrang:"", },
         isAddNew: true
       }
     });
@@ -122,8 +122,8 @@ export class BilloutListComponent implements OnInit {
     console.log(billout);
   }
   search(keyword: string) {
-    this.pagingParams.searchKey = "name";
-    this.pagingParams.searchValue = keyword;
+    this.pagingParams.searchValue = "tenvtxuat";
+    this.pagingParams.searchKey = keyword;
     this.loadData(true);
   }
   sort(sort: { key: string, value: string }): void {

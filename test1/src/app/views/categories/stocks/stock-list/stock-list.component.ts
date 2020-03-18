@@ -81,7 +81,7 @@ export class StockListComponent implements OnInit {
       nzMaskClosable: false,
       nzClosable: false,
       nzComponentParams: {
-        stock: { id: 0, name: "", unitId: 0, inventoryId: 0 ,unitName:"",inventoryName:"",},
+        stock: { id: 0, name: "", unitId: 0, inventoryId: 0 ,unitName:"",inventoryName:"",soluong:null},
         isAddNew: true
       }
     });

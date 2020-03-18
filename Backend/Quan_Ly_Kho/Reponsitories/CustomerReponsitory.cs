@@ -20,23 +20,27 @@ namespace Quan_Ly_Kho.Reponsitories
         public async Task<PagedList<Customer>> GetAllPagingAsync(PagingParams pagingParams)
         {
             IQueryable<Customer> _query = from u in _context.Customers
-                                          orderby u.Name
+                                          orderby u.Id
                                           select new Customer { Id = u.Id, Name = u.Name, Diachi = u.Diachi, Sdt = u.Sdt };
             // Search
-            if (pagingParams.SearchValue == "name")
+            if (pagingParams.SearchKey == "name")
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
+                if (string.IsNullOrEmpty(pagingParams.SearchValue) == false)
                 {
-                    _query = _query.Where(o => o.Name.Contains(pagingParams.SearchKey));
+                    _query = _query.Where(o => o.Name.Contains(pagingParams.SearchValue));
                 }
             }
-
-            if (pagingParams.SearchValue == "id")
+            // tim kiem all
+            if (string.IsNullOrEmpty(pagingParams.Keyword) == false)
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
-                {
-                    int _id = Convert.ToInt32(pagingParams.SearchKey);
+                _query = _query.Where(o => o.Name.Contains(pagingParams.SearchKey));
+            }
 
+            if (pagingParams.SearchKey == "id")
+            {
+                if (string.IsNullOrEmpty(pagingParams.SortValue) == false)
+                {
+                    int _id = Convert.ToInt32(pagingParams.SortValue);
                     _query = _query.Where(o => o.Id == _id);
                 }
             }

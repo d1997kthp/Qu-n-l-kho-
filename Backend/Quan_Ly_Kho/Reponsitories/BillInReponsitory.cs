@@ -20,29 +20,33 @@ namespace Quan_Ly_Kho.Reponsitories
         public async Task<PagedList<BillIn>> GetAllPagingAsync(PagingParams pagingParams)
         {
             IQueryable<BillIn> _query = from u in _context.BillIns
-                                        orderby u.Tenvtnhap
+                                        orderby u.Id
                                         select new BillIn { Id = u.Id, Tenvtnhap = u.Tenvtnhap, Ngaynhap = u.Ngaynhap, Soluongnhap = u.Soluongnhap, Dongianhap = u.Dongianhap, Tinhtrang = u.Tinhtrang };
             // Search
-            if (pagingParams.SearchValue == "name")
+            if (pagingParams.SearchKey == "tenvtnhap")
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
+                if (string.IsNullOrEmpty(pagingParams.SearchValue) == false)
                 {
-                    _query = _query.Where(o => o.Tenvtnhap.Contains(pagingParams.SearchKey));
+                    _query = _query.Where(o => o.Tenvtnhap.Contains(pagingParams.SearchValue));
                 }
             }
-
-            if (pagingParams.SearchValue == "id")
+            // tim kiem all
+            if (string.IsNullOrEmpty(pagingParams.Keyword) == false)
             {
-                if (string.IsNullOrEmpty(pagingParams.SearchKey) == false)
-                {
-                    int _id = Convert.ToInt32(pagingParams.SearchKey);
+                _query = _query.Where(o => o.Tenvtnhap.Contains(pagingParams.SearchKey));
+            }
 
+            if (pagingParams.SearchKey == "id")
+            {
+                if (string.IsNullOrEmpty(pagingParams.SortValue) == false)
+                {
+                    int _id = Convert.ToInt32(pagingParams.SortValue);
                     _query = _query.Where(o => o.Id == _id);
                 }
             }
 
             //Sort 
-            if (pagingParams.SortKey == "name")
+            if (pagingParams.SortKey == "tenvtnhap")
             {
                 if (pagingParams.SortValue == "ascend")
 

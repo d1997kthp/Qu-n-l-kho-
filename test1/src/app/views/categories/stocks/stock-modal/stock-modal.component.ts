@@ -58,6 +58,7 @@ export class StockModalComponent implements OnInit {
       inventoryId: [null, [Validators.required]],
       unitName:[null, [Validators.required]],
       inventoryName:[null, [Validators.required]],
+      soluong:[null],
     });
   };
   //xóa hiển thị
