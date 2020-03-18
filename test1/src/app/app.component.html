@@ -1,0 +1,53 @@
+<nz-layout>
+  <nz-sider [nzTheme]="'light'" class="menu-sidebar" nzCollapsible nzWidth="256px">
+    <ul nz-menu nzMode="inline">
+      <li nz-submenu nzTitle="Danh mục" nzIcon="sketch" nzOpen>
+        <ul>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/danh-muc/khach-hang/danh-sach']">
+              <i nz-icon nzType="reddit" nzTheme="outline"></i><span>Khách hàng</span>
+            </a>
+          </li>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/danh-muc/don-vi-tinh/danh-sach']">
+              <i nz-icon nzType="gold" nzTheme="outline"></i><span>Đơn vị tính</span>
+            </a>
+          </li>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/danh-muc/vat-tu/danh-sach']">
+              <i nz-icon nzType="database" nzTheme="outline"></i><span>Vật tư</span>
+            </a>
+          </li>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/danh-muc/kho/danh-sach']">
+              <i nz-icon nzType="shop" nzTheme="outline"></i><span>Kho</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Hóa Đơn" nzIcon="sketch" nzOpen>
+        <ul>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/hoa-don/hd-nhap/hoa-don']">
+              <i nz-icon nzType="fast-backward" nzTheme="outline"></i><span>Hóa Đơn Nhập</span>
+            </a>
+          </li>
+          <li nz-menu-item [nzMatchRouter]="true">
+            <a [routerLink]="['/hoa-don/hd-xuat/hoa-don']">
+              <i nz-icon nzType="fast-forward" nzTheme="outline"></i><span>Hóa Đơn Xuất</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout style="background-color: #fff !important;">
+    <nz-header style="color: red;font-family:Trebuchet MS;text-align: center;font-size: 56px">QUẢN LÝ KHO HÀNG
+    </nz-header>
+    <nz-content>
+      <div class='inner-content'>
+        <router-outlet> </router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

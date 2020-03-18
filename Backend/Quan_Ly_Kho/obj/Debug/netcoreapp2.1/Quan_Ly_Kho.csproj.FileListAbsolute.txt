@@ -1,0 +1,32 @@
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.deps.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.runtimeconfig.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.runtimeconfig.dev.json
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.dll
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorAssemblyInfo.cache
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorAssemblyInfo.cs
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.AssemblyInfoInputs.cache
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.AssemblyInfo.cs
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorTargetAssemblyInfo.cache
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.pdb
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.dll
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.pdb
+C:\Users\d1997\source\repos\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.csprojAssemblyReference.cache
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.csprojAssemblyReference.cache
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorAssemblyInfo.cache
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorAssemblyInfo.cs
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.AssemblyInfoInputs.cache
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.AssemblyInfo.cs
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.dll
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.pdb
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.deps.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.runtimeconfig.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.runtimeconfig.dev.json
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.dll
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\netcoreapp2.1\Quan_Ly_Kho.pdb
+C:\Users\d1997\Documents\Zalo Received Files\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\netcoreapp2.1\Quan_Ly_Kho.RazorTargetAssemblyInfo.cache

@@ -1,0 +1,22 @@
+nz-header,
+nz-footer {
+    background: #98B4D4;
+    color: #fff;
+  }
+  nz-layout {
+    height: 100%;
+  }
+  
+  .menu-sidebar {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    box-shadow: 1px 0 3px rgba(0, 21, 41, 0.35);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    height: 100%;
+  }
