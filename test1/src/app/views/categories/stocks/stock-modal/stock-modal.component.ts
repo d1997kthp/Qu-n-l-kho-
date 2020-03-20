@@ -66,35 +66,35 @@ export class StockModalComponent implements OnInit {
     this.modal.destroy(false)
   }
   //lưu thay đổi
-  saveChanges() {
+  saveChanges(){
     const stock = this.stockForm.getRawValue();
     //nếu thêm mới = true -> gửi ra mesage thành công
-    if (this.isAddNew) {
-
-      // Log cai stock ra
-      console.log(stock);
-      if (this.isAddNew) {
-      this.stockService.addNew(stock).subscribe((res: any) => {
-        if (res) {
-          this.notify.success(MessageConstant.CREATED_OK_MSG);
-          this.modal.destroy(true);
+      if(this.isAddNew){
+        if(stock.name=='')
+        {
+          this.notify.error(MessageConstant.LOSTDATA_MSG);
         }
-
-        this.loadingSaveChanges = false;
-      }, _ => this.loadingSaveChanges = false);
+        
+        this.stockService.addNew(stock).subscribe((res: any) => {
+          if (res) {
+            this.notify.success(MessageConstant.CREATED_OK_MSG);
+            this.modal.destroy(true);
+          }
+  
+          this.loadingSaveChanges = false;
+        }, _ => this.loadingSaveChanges = false);
+      }
+      //không phải thì update
+      else {
+        this.stockService.update(stock).subscribe((res: any) => {
+          if (res) {
+            this.notify.success(MessageConstant.UPDATED_OK_MSG);
+            this.modal.destroy(true);
+          }
+  
+          this.loadingSaveChanges = false;
+        }, _ => this.loadingSaveChanges = false);
+      }
     }
-    //không phải thì update
-    else {
-      this.stockService.update(stock).subscribe((res: any) => {
-        if (res) {
-          this.notify.success(MessageConstant.UPDATED_OK_MSG);
-          this.modal.destroy(true);
-        }
-
-        this.loadingSaveChanges = false;
-      }, _ => this.loadingSaveChanges = false);
-    }
-  }
-  }
 }
 
